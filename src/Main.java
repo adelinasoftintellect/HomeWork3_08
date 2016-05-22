@@ -14,15 +14,16 @@ public class Main {
 		System.out.println("Please enter integer c:");
 		int c = input.nextInt();
 		double d = -(b * b) - (4 * a * c);
+
+		if (a == 0) {
+			System.out.println("The equation is not square");
+			return;
+		}
 		double x = -b / (2 * a);
 		double SqRt = Math.sqrt(d);
 		double x1 = ((-b + SqRt) / 2 * a);
 		double x2 = ((-b - SqRt) / 2 * a);
-
-		if (a == 0) {
-			System.out.println("The equation is not square");
-
-		} else {
+		{
 
 			System.out.println("d = - (b*b) - (4*a*c) = " + d);
 			if (d < 0) {
